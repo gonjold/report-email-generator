@@ -86,11 +86,25 @@ def load_config():
         "default_ai": "claude"
     }
     
-    # First try environment variables
-    config["claude_api_key"] = os.environ.get("CLAUDE_API_KEY")
-    config["openai_api_key"] = os.environ.get("OPENAI_API_KEY")
-    config["deepseek_api_key"] = os.environ.get("DEEPSEEK_API_KEY")
-    config["default_ai"] = os.environ.get("DEFAULT_AI", config["default_ai"])
+    # Try to load from Streamlit secrets
+    try:
+        if "API_KEYS" in st.secrets:
+            config["claude_api_key"] = st.secrets["API_KEYS"].get("claude")
+            config["openai_api_key"] = st.secrets["API_KEYS"].get("openai")
+            config["deepseek_api_key"] = st.secrets["API_KEYS"].get("deepseek")
+            config["default_ai"] = st.secrets.get("SETTINGS", {}).get("default_ai", config["default_ai"])
+    except Exception as e:
+        print(f"Error loading secrets: {e}")
+    
+    # Then try environment variables (as fallback)
+    if not config["claude_api_key"]:
+        config["claude_api_key"] = os.environ.get("CLAUDE_API_KEY")
+    if not config["openai_api_key"]:
+        config["openai_api_key"] = os.environ.get("OPENAI_API_KEY")
+    if not config["deepseek_api_key"]:
+        config["deepseek_api_key"] = os.environ.get("DEEPSEEK_API_KEY")
+    if not config["default_ai"]:
+        config["default_ai"] = os.environ.get("DEFAULT_AI", config["default_ai"])
     
     # Then try config file
     if os.path.exists(CONFIG_FILE):
