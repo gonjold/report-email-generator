@@ -1,0 +1,37 @@
+{
+  "store_name": "Palmer Chrysler Dodge Jeep Ram",
+  "date_range": "04/01/2025 - 04/19/2025",
+  "rsa_impr": 21569,
+  "rsa_clicks": 2179,
+  "rsa_cpc": 3.18,
+  "rsa_conv": 182,
+  "rsa_cost_conv": 38.11,
+  "pmax_impr": "[x,xxx]",
+  "pmax_clicks": "[xxx]",
+  "pmax_cpc": "$x.xx",
+  "pmax_conv": "[xx]",
+  "pmax_cost_conv": "[x,xxx]",
+  "pmax_vla_impr": 111387,
+  "pmax_vla_clicks": 1405,
+  "pmax_vla_cpc": 0.96,
+  "pmax_vla_conv": 16,
+  "pmax_vla_cost_conv": 83.98,
+  "social_reach": 42624,
+  "social_impr": 131887,
+  "social_clicks": 11146,
+  "social_cpc": 0.16,
+  "social_vdp": 40624,
+  "has_bcdf": true,
+  "bcdf_tactics": [
+    "GOOGLE ADS",
+    "FACEBOOK ADS"
+  ],
+  "bcdf_impr": 177775,
+  "bcdf_clicks": 3940,
+  "bcdf_cpc": 0.42,
+  "bcdf_tactics_organized": {
+    "pmax": false,
+    "paid_social": false,
+    "tactics_list": ""
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "store_name": "Palmer Chrysler Dodge Jeep Ram",
+  "date_range": "04/01/2025 - 04/19/2025",
+  "rsa_impr": "21569",
+  "rsa_clicks": "2179",
+  "rsa_cpc": "$3.18",
+  "rsa_conv": "182",
+  "rsa_cost_conv": "$38.11",
+  "pmax_impr": "111387",
+  "pmax_clicks": "1405",
+  "pmax_cpc": "$0.96",
+  "pmax_conv": "16",
+  "pmax_cost_conv": "$83.98",
+  "pmax_vla_impr": "9235",
+  "pmax_vla_clicks": "134",
+  "pmax_vla_cpc": "$1.12",
+  "pmax_vla_conv": "7",
+  "pmax_vla_cost_conv": "$21.53",
+  "social_reach": "42624",
+  "social_impr": "131887",
+  "social_clicks": "11146",
+  "social_cpc": "$0.16",
+  "social_vdp": "40624",
+  "has_bcdf": true,
+  "bcdf_tactics": [
+    "44305_PMAX_q225sbcbcdf_new_h",
+    "VLA_44305_PMAX_q225sbcbcdf_new_h",
+    "New_AIA_V_S 25Q2 SBC April BCDF_h"
+  ],
+  "bcdf_impr": "177776",
+  "bcdf_clicks": "3940",
+  "bcdf_cpc": "$0.68",
+  "bcdf_conv": "[xx]",
+  "bcdf_vdp": "[xxx]",
+  "bcdf_tactics_organized": {
+    "pmax": true,
+    "paid_social": true,
+    "tactics_list": "Performance Max, Paid Social"
+  }
+}

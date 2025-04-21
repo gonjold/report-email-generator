@@ -1,0 +1,4 @@
+parser_config.ini
+__pycache__/
+*.pyc
+.DS_Store
